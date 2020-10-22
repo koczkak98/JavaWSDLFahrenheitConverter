@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConvertController {
 
     @GetMapping("/{celsius}")
-    public double getCelsiusToFahrenheit
+    public String getCelsiusToFahrenheit
             (@PathVariable("celsius") double c)
             throws Exception
     {
@@ -20,6 +20,6 @@ public class ConvertController {
 
         fahrenheitValue = res;
 
-        return fahrenheitValue;
+        return ("F°: " + fahrenheitValue);
     }
 }
