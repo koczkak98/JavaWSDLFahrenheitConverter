@@ -1,4 +1,4 @@
-package JavaWSDLFahrenheitConverter.converter;
+package com.example.fahrenheitconverter.JavaWSDLFahrenheitConverter.converter;
 
 import JavaWSDLFahrenheitConverter.forras.AFDTempConverterEndpointServiceSoapBinding;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,15 +10,17 @@ public class ConvertController {
 
     @GetMapping("/{celsius}")
     public String getCelsiusToFahrenheit
-            (@PathVariable("celsius") double c)
-            throws Exception
+            (@PathVariable("celsius") double c) throws Exception
     {
         double fahrenheitValue = 0;
+
+        System.out.println(fahrenheitValue);
 
         AFDTempConverterEndpointServiceSoapBinding service = new AFDTempConverterEndpointServiceSoapBinding("http://www.learnwebservices.com/services/tempconverter");
         Double res = service.CelsiusToFahrenheit(c);
 
         fahrenheitValue = res;
+
 
         return ("F°: " + fahrenheitValue);
     }
