@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -26,6 +26,11 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 			<exclusions>
@@ -38,32 +43,31 @@
 
 		<dependency>
 
-		<groupId>test</groupId>
+			<groupId>test</groupId>
 
-		<artifactId>ExKsoap2-1.0.3.1</artifactId>
+			<artifactId>ExKsoap2-1.0.3.1</artifactId>
 
-		<version>1.0</version>
+			<version>1.0</version>
 
-		<scope>system</scope>
+			<scope>system</scope>
 
-		<systemPath>${project.basedir}/lib/ExKsoap2-1.0.3.1.jar</systemPath>
+			<systemPath>${project.basedir}/lib/ExKsoap2-1.0.3.1.jar</systemPath>
 
-	</dependency>
-
+		</dependency>
 
 		<dependency>
 
-		<groupId>test</groupId>
+			<groupId>test</groupId>
 
-		<artifactId>ksoap2-android-assembly-3.6.4-jar-with-dependencies</artifactId>
+			<artifactId>ksoap2-android-assembly-3.6.4-jar-with-dependencies</artifactId>
 
-		<version>1.0</version>
+			<version>1.0</version>
 
-		<scope>system</scope>
+			<scope>system</scope>
 
-		<systemPath>${project.basedir}/lib/ksoap2-android-assembly-3.6.4-jar-with-dependencies.jar</systemPath>
+			<systemPath>${project.basedir}/lib/ksoap2-android-assembly-3.6.4-jar-with-dependencies.jar</systemPath>
 
-	</dependency>
+		</dependency>
 
 
 	</dependencies>
