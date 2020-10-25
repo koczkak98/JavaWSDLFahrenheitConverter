@@ -38,7 +38,8 @@ public class ConvertController {
                 AFDTempConverterEndpointServiceSoapBinding service = new AFDTempConverterEndpointServiceSoapBinding("http://www.learnwebservices.com/services/tempconverter");
                 Double res = service.CelsiusToFahrenheit(Double.parseDouble(fahrenheitValue));
 
-                model.addAttribute("result", fahrenheitValue + " F°");
+
+                model.addAttribute("result", res + " F°");
             }
             catch (IllegalArgumentException e)
             {
