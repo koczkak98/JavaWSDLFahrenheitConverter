@@ -5,8 +5,6 @@ public class Fahrenheit {
     private String input;
 
     public String getInput() {
-
-
         return input;
     }
 
