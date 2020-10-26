@@ -9,6 +9,15 @@
 
         <input type="text" th:field="*{input}" />
         <input type = "submit" />
+
+        <select th:field="*{temp}">
+            <option th:each="tempTypes : ${tempTypes}"
+                    th:value="${tempTypes}"
+                    th:text="${tempTypes}">
+            </option>
+        </select>
+
+        </select>
     </form>
 
     <p th:text="${result}" />

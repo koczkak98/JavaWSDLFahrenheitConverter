@@ -21,8 +21,6 @@ public class JavaWsdlFahrenheitConverterApplication {
 		 * 	System.out.println(fahrenheitValue);
 		 */
 
-
-
 		SpringApplication.run(JavaWsdlFahrenheitConverterApplication.class, args);
 	}
 
